@@ -1,0 +1,17 @@
+body {
+    display: flex;
+}
+
+
+#popular-drinks {
+    text-align: center;
+}
+
+#popular-drinks h4 {
+    font-size: 30px;
+}
+
+#popular-drinks span {
+    font-size: 20px;
+}
+
