@@ -5,7 +5,10 @@
 #starter {
     margin-top: 28px;
 }
-
+#page-footer {
+    justify-content: center;
+    color: blue;
+  }
 .input-field label {
     color: lightgray;
   }
