@@ -38,5 +38,25 @@ function saveRecentMusic() {
     
 };
 
+request.post(authOptions, function (error, response, body) {
+    if (!error && response.statusCode === 200) {
+        var token = body.access_token;
+    }
+});
+
+
+const token = '';
+  fetch('https://api.spotify.com/v1/browse/categories', {
+    method: 'GET',
+    headers: {
+      Authorization: Bearer ${token},
+      'Content-Type': 'application/json',
+      Accept: 'application/json'
+    },
+    body: 'false'
+  })
+    .then(response => response.json())
+    .then(response => console.log(response))
+    .catch(err => console.error(err));
 
 
