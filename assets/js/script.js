@@ -6,43 +6,37 @@ const options = {
     }
 };
 
-var base = document.getElementById("starter-input").value
+var base = document.getElementById("starter-input");
+var musicGenre = document.getElementById("music-input");
 
-var resultBtn = document.getElementById("result")
+var resultBtn = document.getElementById("result");
 resultBtn.addEventListener("click", function (event) {
     event.preventDefault;
-    console.log(base)
+    fetch(`https://the-cocktail-db.p.rapidapi.com/filter.php?i=${base.value}`, options)
+        .then(response => response.json())
+        .then(response => console.log(response))
+        .catch(err => console.error(err));
+
+    saveRecentBase();
+    saveRecentMusic(); 
 })
 
-fetch('https://the-cocktail-db.p.rapidapi.com/filter.php?i=${base}', options)
-    .then(response => response.json())
-    .then(response => console.log(response))
-    .catch(err => console.error(err));
-
-
-var client_id = '38d4f68f7ce6463c8dc8b2f535d166fd';
-var client_secret = '3f3067d5f53b49e89e4f417617dfeb88';
-
-var authOptions = {
-    url: 'https://accounts.spotify.com/api/token',
-    headers: {
-        'Authorization': 'Basic ' + (new Buffer(client_id + ':' + client_secret).toString('base64'))
-    },
-    form: {
-        grant_type: 'client_credentials'
-    },
-    json: true
+ 
+function saveRecentBase() {
+    var recentBaseEl = JSON.parse(localStorage.getItem("base")) || [];
+    var baseIngredient = document.getElementById("starter-input").value; 
+    recentBaseEl.push(baseIngredient);
+    localStorage.setItem("base", JSON.stringify(recentBaseEl)); 
+    
 };
 
-fetch('https://accounts.spotify.com/api/token', {
-    method: 'POST',
-    headers: {
-        'Authorization': 'Basic ' + (new Buffer(client_id + ':' + client_secret).toString('base64'))
-    },
-});
+function saveRecentMusic() {
+    var recentMusicEl = JSON.parse(localStorage.getItem("music")) || [];
+    var musicSelection = document.getElementById("music-input").value; 
+    recentMusicEl.push(musicSelection);
+    localStorage.setItem("music", JSON.stringify(recentMusicEl)); 
+    
+};
 
-request.post(authOptions, function (error, response, body) {
-    if (!error && response.statusCode === 200) {
-        var token = body.access_token;
-    }
-});
+
+
