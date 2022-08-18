@@ -46,3 +46,18 @@ request.post(authOptions, function (error, response, body) {
         var token = body.access_token;
     }
 });
+
+
+const token = '';
+  fetch('https://api.spotify.com/v1/browse/categories', {
+    method: 'GET',
+    headers: {
+      Authorization: `Bearer ${token}`,
+      'Content-Type': 'application/json',
+      Accept: 'application/json'
+    },
+    body: 'false'
+  })
+    .then(response => response.json())
+    .then(response => console.log(response))
+    .catch(err => console.error(err));
