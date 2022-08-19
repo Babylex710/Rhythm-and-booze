@@ -18,3 +18,16 @@ h6 {
     text-align: center;
     color: whitesmoke;
 }
+
+.footer-copyright {
+    text-align: center;
+}
+
+.footer-text {
+    text-align: center;
+    ;
+}
+
+h5 {
+    text-align:flex;
+}
