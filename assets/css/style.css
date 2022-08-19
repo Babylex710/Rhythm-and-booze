@@ -33,5 +33,9 @@ h5 {
 }
 
 #results-page {
-    /* display: none; */
+
+    display: none;
 }
+
+#spot {
+    padding-right: 12px;
