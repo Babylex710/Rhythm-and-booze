@@ -32,3 +32,6 @@ h5 {
     text-align:flex;
 }
 
+#results-page {
+    display: none;
+}

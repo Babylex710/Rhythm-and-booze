@@ -11,7 +11,7 @@
 </head>
 
 <body>
-
+<div id="start-page">
   <header id="header">
     <nav>
       <div class="nav-wrapper">
@@ -38,7 +38,7 @@
       <div class="col s12 m12" id="search card">
         <div class="card-panel red lighten-2 hoverable">
           <span class="white-text">
-            First, input the type of alcohol you want as a base for your recipe. Then, input the genre of music you
+            First, input the type of alcohol (vodka, whiskey, gin...) you want as a base for your recipe. Then, input the genre of music you
             would like to listen to. Boom! Now you have your Rhythm & Booze.
           </span>
           <div class="input-field" id="starter">
@@ -112,6 +112,94 @@
       © 2022
     </div>
   </footer>
+</div>
+
+<div id="results-page">
+  <header id="header">
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo center">Rhythm & Booze</a>
+        </div>
+    </nav>
+</header>
+
+<div class="col s12 m7">
+    <div class="card horizontal red lighten-3">
+        <div class="card-stacked" id="results-header">
+            <div class="card-content">
+                <h5>Here's Your Match! Get to Mixing</h5>
+            </div>
+            <div class="card-content">
+                <hr>Thanks For Using Rhythm&Booze!!!</hr>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="col s12 m12" id="search card">
+
+            <div class="card-panel red lighten-2 hoverable">
+
+                <span class="white-text">
+                    First, input the type of alcohol (vodka, whiskey, gin...) you want as a base for your recipe. Then, input the genre of
+                    music you
+                    would like to listen to. Boom! Now you have your Rhythm & Booze.
+                </span>
+
+                <div class="input-field" id="starter">
+
+                    <input id="starter-input" type="text">
+
+                    <label class="active" for="starter-input">
+                        Base Liquor
+                    </label>
+
+                </div>
+
+                <div class="input-field" id="music">
+
+                    <input type="text" id="music-input">
+
+                    <label class="active" for="music-input">
+                        Genre of Music
+                    </label>
+
+                </div>
+
+                <button id="result">
+                    Boom!
+                </button>
+
+                <button id="reset">
+                    Reset Page!
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="col s12 m4" id="ingredients-card">
+            <div class="card small panel red lighten-3 hoverable">
+                <h6>
+                    Ingredients
+                </h6>
+
+                <ul id="ingredients-list">
+
+                </ul>
+            </div>
+
+        </div>
+        <div class="col s12 m8" id="result-playlist">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZEVXbNG2KDcFcKOF?utm_source=generator" width="100%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+    </div>
+</div>
+</div>
   <script src="./assets/js/script.js"></script>
 </body>
 
