@@ -65,7 +65,9 @@ function recentSearchs () {
 
 function printRecentSearch () {
     var userRecents = JSON.parse(localStorage.getItem("user-recent")) || [];
-    
+    if (userRecents.length === 0) {
+        return
+    } else {
     for (var i=0; i < 4; i++) {
         var collectionEl = document.querySelector(".collection")
         var aEl = document.createElement("a");
@@ -73,7 +75,7 @@ function printRecentSearch () {
         aEl.textContent = userRecents[i].alcohol + " with " + userRecents[i].genre;
         collectionEl.appendChild(aEl)
     }
-    }
+    }}
 
     printRecentSearch(); 
 
