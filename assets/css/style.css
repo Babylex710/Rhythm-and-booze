@@ -1,11 +1,25 @@
 #sidebar {
     margin-top: 25%;
-};
+}
 
 #starter {
     margin-top: 28px;
-};
+}
 
 .input-field label {
     color: lightgray;
-  };
+}
+
+h6 {
+    text-align: center;
+    color: whitesmoke;
+    font-size: larger;
+    padding-top: 5%;
+    text-decoration-line: underline;
+}
+
+#results-header {
+    text-align: center;
+    color: whitesmoke;
+}
+
