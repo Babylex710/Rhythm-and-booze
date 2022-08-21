@@ -137,8 +137,11 @@ document.addEventListener('DOMContentLoaded', function () {
     function displayIngredients(drink) {
         for (var i = 0; i < drink.ingredients.length; i++) {
             var liEl = document.createElement("li");
+            var nameEl = document.getElementById("drink-name");
             liEl.textContent = drink.ingredients[i];
+            nameEl.textContent = drink.name;
             document.getElementById("ingredients-list").appendChild(liEl);
+
         }
     };
 
