@@ -11,201 +11,205 @@
 </head>
 
 <body>
-<div id="start-page">
-  <header id="header">
-    <nav>
-      <div class="nav-wrapper">
-        <a href="#" class="brand-logo center">Rhythm & Booze</a>
-      </div>
-    </nav>
-  </header>
-
-  <div class="col s12 m7">
-    <div class="card horizontal red lighten-3">
-        <div class="card-stacked" id="results-header">
-            <div class="card-content">
-                <h5>Welcome to Rhythm & Booze!!!</h5>
-            </div>
-            <div class="card-content">
-                <hr>Let Us Find Your Match</hr>
-            </div>
-        </div>
-    </div>
-</div>
-
-  <div class="container" id="sidebar">
-    <div class="row">
-      <div class="col s12 m12" id="search card">
-        <div class="card-panel red lighten-2 hoverable">
-          <span class="white-text">
-            First, input the type of alcohol (vodka, whiskey, gin...) you want as a base for your recipe. Then, input the genre of music you
-            would like to listen to. Boom! Now you have your Rhythm & Booze.
-          </span>
-          <div class="input-field" id="starter">
-            <input id="starter-input" type="text">
-            <label class="active" for="starter-input">
-              Base Liquor
-            </label>
-          </div>
-          <div class="input-field" id="music">
-            <input type="text" id="music-input">
-            <label class="active" for="music-input">
-              Genre of Music
-            </label>
-          </div>
-          <button id="result">
-            Boom!
-          </button>
-        </div>
-      </div>
-
-      <div class="col s12 m4" id="recents">
-        <div class="card-panel red lighten-2 hoverable">
-        <h2>Recent Searches</h2>
-        <div class="collection">
-          <!-- <a href="#!" id="search1" class="collection-item">Recent Search #1</a>
-          <a href="#!" id="search2" class="collection-item">Recent Search #2</a>
-          <a href="#!" id="search3" class="collection-item">Recent Search #3</a>
-          <a href="#!" id="search4" class="collection-item">Recent Search #4</a> -->
-        </div>
-        </div>
-      </div>
-      <div class="col s12 m4">
-        <div class="card-panel red lighten-2 hoverable">
-        <div id="popular-drinks">
-          <ul class="collection with-header">
-            <li class="collection-header">
-              <h4>Popular Cocktails</h4>
-            </li>
-            <li class="collection-item avatar"><img src="./assets/images/mojito.jpeg" alt="" class="circle">
-              <span class="title">Mojito</span>
-            </li>
-            <li class="collection-item avatar"><img src="./assets/images/oldfashioned1.webp" alt="" class="circle">
-              <span class="titles">Old Fashioned</span>
-            </li>
-            <li class="collection-item avatar"><img src="./assets/images/Long-Island-Iced-Tea-IG.jpeg" alt=""
-                class="circle">
-              <span class="titles">Long Island Iced Tea</span>
-            </li>
-            <li class="collection-item avatar"><img src="./assets/images/image.jpeg" alt="" class="circle">
-              <span class="titles">Mai Tai</span>
-            </li>
-          </ul>
-        </div>
-        </div>
-      </div>
-      <div class="col s12 m4" id="spotify-embed">
-        <div class="card-panel red lighten-2 hoverable">
-        <iframe id="spot" style="border-radius:12px"
-          src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M?utm_source=generator" width="300"
-          height="380" frameBorder="0" allowfullscreen=""
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-        </div>
-      </div>
-    </div>
-  </div>
-  <footer class="page-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Thank you for using Rhythm & Booze</h5>
-          <p class="grey-text text-lighten-4">Please enjoy responsibly.</p>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      © 2022
-    </div>
-  </footer>
-</div>
-
-<div id="results-page">
-  <header id="header">
-    <nav>
+  <div id="start-page">
+    <header id="header">
+      <nav>
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo center">Rhythm & Booze</a>
+          <a href="#" class="brand-logo center">Rhythm & Booze</a>
         </div>
-    </nav>
-</header>
+      </nav>
+    </header>
 
-<div class="col s12 m7">
-    <div class="card horizontal red lighten-3">
+    <div class="col s12 m7">
+      <div class="card horizontal red lighten-3">
         <div class="card-stacked" id="results-header">
-            <div class="card-content">
-                <h5>Here's Your Match! Get to Mixing</h5>
-            </div>
-            <div class="card-content">
-                <hr>Thanks For Using Rhythm&Booze!!!</hr>
-            </div>
+          <div class="card-content">
+            <h5>Welcome to Rhythm & Booze!!!</h5>
+          </div>
+          <div class="card-content">
+            <hr>Let Us Find Your Match</hr>
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
-<div class="container">
+    <div class="container" id="sidebar">
+      <div class="row">
+        <div class="col s12 m12" id="search card">
+          <div class="card-panel red lighten-2 hoverable">
+            <span class="white-text">
+              First, input the type of alcohol (vodka, whiskey, gin...) you want as a base for your recipe. Then, input
+              the genre of music you
+              would like to listen to. Boom! Now you have your Rhythm & Booze.
+            </span>
+            <div class="input-field" id="starter">
+              <input id="starter-input" type="text">
+              <label class="active" for="starter-input">
+                Base Liquor
+              </label>
+            </div>
+            <div class="input-field" id="music">
+              <select id="music-input">
+              </select>
+              <label class="active" for="music-input">
+                Genre of Music
+              </label>
+            </div>
+            <button class="btn" id="result">
+              Boom!
+            </button>
+          </div>
+        </div>
 
-    <div class="row">
+        <div class="col s12 m4" id="recents">
+          <div class="card-panel red lighten-2 hoverable">
+            <h2>Recent Searches</h2>
+            <div class="collection">
+            
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card-panel red lighten-2 hoverable">
+            <div id="popular-drinks">
+              <ul class="collection with-header">
+                <li class="collection-header">
+                  <h4>Popular Cocktails</h4>
+                </li>
+                <li class="collection-item avatar"><img src="./assets/images/mojito.jpeg" alt="" class="circle">
+                  <span class="title">Mojito</span>
+                </li>
+                <li class="collection-item avatar"><img src="./assets/images/oldfashioned1.webp" alt="" class="circle">
+                  <span class="titles">Old Fashioned</span>
+                </li>
+                <li class="collection-item avatar"><img src="./assets/images/Long-Island-Iced-Tea-IG.jpeg" alt=""
+                    class="circle">
+                  <span class="titles">Long Island Iced Tea</span>
+                </li>
+                <li class="collection-item avatar"><img src="./assets/images/image.jpeg" alt="" class="circle">
+                  <span class="titles">Mai Tai</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4" id="spotify-embed">
+          <div class="card-panel red lighten-2 hoverable">
+            <iframe id="spot" style="border-radius:12px"
+              src="" width="100%"
+              height="380" frameBorder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Thank you for using Rhythm & Booze</h5>
+            <p class="grey-text text-lighten-4">Please enjoy responsibly.</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          © 2022
+        </div>
+    </footer>
+  </div>
+
+  <div id="results-page">
+    <header id="header">
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo center">Rhythm & Booze</a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="col s12 m7">
+      <div class="card horizontal red lighten-3">
+        <div class="card-stacked" id="results-header">
+          <div class="card-content">
+            <h5>Here's Your Match! Get to Mixing</h5>
+          </div>
+          <div class="card-content">
+            <hr>Thanks For Using Rhythm&Booze!!!</hr>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="row">
 
         <div class="col s12 m12" id="search card">
 
-            <div class="card-panel red lighten-2 hoverable">
+          <div class="card-panel red lighten-2 hoverable">
 
-                <span class="white-text">
-                    First, input the type of alcohol (vodka, whiskey, gin...) you want as a base for your recipe. Then, input the genre of
-                    music you
-                    would like to listen to. Boom! Now you have your Rhythm & Booze.
-                </span>
+            <span class="white-text">
+              First, input the type of alcohol (vodka, whiskey, gin...) you want as a base for your recipe. Then, input
+              the genre of
+              music you
+              would like to listen to. Boom! Now you have your Rhythm & Booze.
+            </span>
 
-                <div class="input-field" id="starter">
+            <div class="input-field" id="starter">
 
-                    <input id="starter-input" type="text">
+              <input id="starter-input" type="text">
 
-                    <label class="active" for="starter-input">
-                        Base Liquor
-                    </label>
-
-                </div>
-
-                <div class="input-field" id="music">
-
-                    <input type="text" id="music-input">
-
-                    <label class="active" for="music-input">
-                        Genre of Music
-                    </label>
-
-                </div>
-
-                <button id="result">
-                    Boom!
-                </button>
-
-                <button id="reset">
-                    Reset Page!
-                </button>
+              <label class="active" for="starter-input">
+                Base Liquor
+              </label>
 
             </div>
+
+            <div class="input-field" id="music">
+
+              <!-- <input type="text" id="music-input"> -->
+
+              <label class="active" for="music-input">
+                Genre of Music
+              </label>
+
+            </div>
+
+            <button class="btn" id="result">
+              Boom!
+            </button>
+
+            <button class="btn" id="reset">
+              Reset Page!
+            </button>
+
+          </div>
 
         </div>
 
         <div class="col s12 m4" id="ingredients-card">
-            <div class="card small panel red lighten-3 hoverable">
-                <h6>
-                    Ingredients
-                </h6>
+          <div class="card small panel red lighten-3 hoverable">
+            <h6>
+              Ingredients
+            </h6>
 
-                <ul id="ingredients-list">
+            <ul id="ingredients-list">
 
-                </ul>
-            </div>
+            </ul>
+          </div>
 
         </div>
         <div class="col s12 m8" id="result-playlist">
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZEVXbNG2KDcFcKOF?utm_source=generator" width="100%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+          <!-- <iframe style="border-radius:12px"
+            src="https://open.spotify.com/embed/playlist/37i9dQZEVXbNG2KDcFcKOF?utm_source=generator" width="100%"
+            height="300" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> -->
         </div>
+      </div>
     </div>
-</div>
-</div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="./assets/js/script.js"></script>
 </body>
 
