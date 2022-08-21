@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const token = 'BQC5ON-KMyoQpvYQOCTFEznsjTDjfQdPMVOIo9gqDfTg5ENvmELyAetjhXZi8PpUrjHC7_imv8vOR_b3gxqRjbrR-Y95dpbl9vpRmaqLBj9qcC0nFGecpTRZq0CXJd5KegoZe0W3Hebl95CMAbqdZaHVnsSelErXPNrciEj4ipXKyamShCdAvT0pdfBPCf_G-xqiHSxmBICLislYQ-2XI3A';
+    const token = 'BQBVQ87BaQb6bXm68UO4D9xlErUmpWmWcqahSYXSr-lM5LlqT-GSBiNS_Un01WLy0MaXR37mZrTgogi3jV8mdWuVdrnH8TJPVVsO3R7BP6QuuiP8gWq1MFd0-y3HImvQSypPlkzwEGmeHC0k6yf_86N7PdXuCiBZDP_p1GlJouq1ZQ6zYu74_oWk81cnWZOpjttD__NR6tkws32q1YfP2os';
 
     fetch('https://api.spotify.com/v1/browse/categories', {
         method: 'GET',
@@ -85,13 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     })
-
-
-
-
-
-
-
+ 
 
     function recentSearchs(name) {
         var baseIngredient = base.value;
@@ -150,18 +144,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-    // const token = 'BQDznNcAU__fLCxJ75_CaIlBgluBBeWpMC8oLlTlYRBuBS2dQjxVyweh_YlyYQu66ooS7g1PgxyIWoFV6gnUyFsdZYiOIkxfGzFr5Zvt-b8hdqLQREDnRDabGumLPLbMUT-VIZScjTaDVIDQi1LBiHExZEuScb24IVmHe-rXNlC2e86nZfthhQ1NPh-dSS6Ep8ReRdM2iGMx6ehbRfMm3Jk';
-    // fetch('https://api.spotify.com/v1/browse/categories', {
-    //     method: 'GET',
-    //     headers: {
-    //         Authorization: `Bearer ${token}`,
-    //         'Content-Type': 'application/json',
-    //         Accept: 'application/json'
-    //     },
-    //     body: 'false'
-    // })
-    //     .then(response => response.json())
-    //     .then(response => console.log(response))
-    //     .catch(err => console.error(err));
+    
 
 });
