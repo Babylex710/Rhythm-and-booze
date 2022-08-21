@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const token = 'BQDO22c7Rg_wYATE4vKI9PfjRrOARwfoHBJVP-FMGjtNVR3kE1p4UmMK_463J8rYGy8MTe3n1wmm_IUO4Pe_gU2bgYDZ60rlnAujFCDF_ekK1AHLCeShSZ8Cm2BZEFRbKyAvwRsgzHP3Y-hhJPKpbsalE4HnMlNg5Iic2wZv8CKAh4SAakNj5M38qjHwcEi0MUOty8jS0fDHlHpkpKNYvS8';
+    const token = 'BQC5ON-KMyoQpvYQOCTFEznsjTDjfQdPMVOIo9gqDfTg5ENvmELyAetjhXZi8PpUrjHC7_imv8vOR_b3gxqRjbrR-Y95dpbl9vpRmaqLBj9qcC0nFGecpTRZq0CXJd5KegoZe0W3Hebl95CMAbqdZaHVnsSelErXPNrciEj4ipXKyamShCdAvT0pdfBPCf_G-xqiHSxmBICLislYQ-2XI3A';
 
     fetch('https://api.spotify.com/v1/browse/categories', {
         method: 'GET',
