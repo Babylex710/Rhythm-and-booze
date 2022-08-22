@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
+    var mainContainer=document.querySelector(".mainContainer")
+    mainContainer.style.display="none"
     const token = 'BQBVQ87BaQb6bXm68UO4D9xlErUmpWmWcqahSYXSr-lM5LlqT-GSBiNS_Un01WLy0MaXR37mZrTgogi3jV8mdWuVdrnH8TJPVVsO3R7BP6QuuiP8gWq1MFd0-y3HImvQSypPlkzwEGmeHC0k6yf_86N7PdXuCiBZDP_p1GlJouq1ZQ6zYu74_oWk81cnWZOpjttD__NR6tkws32q1YfP2os';
 
     fetch('https://api.spotify.com/v1/browse/categories', {
@@ -39,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
     resultBtn.addEventListener("click", function (event) {
         console.log(event.target);
         event.preventDefault();
-
+        mainContainer.style.display="block"
         var musicCategoryId = document.querySelector('#music-input').value;
         console.log(musicCategoryId);
 
