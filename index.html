@@ -50,7 +50,9 @@
             </div>
             <div class="input-field" id="music">
               <select id="music-input">
+                <option value="country">country</option>
               </select>
+
               <label class="active" for="music-input">
                 Genre of Music
               </label>
@@ -60,45 +62,46 @@
             </button>
           </div>
         </div>
-
-        <div class="col s12 m4" id="recents">
-          <div class="card-panel red lighten-2 hoverable">
-            <h2>Recent Searches</h2>
-            <div class="collection">
-            
+        <div class="mainContainer">
+          <div class="col s12 m4" id="recents">
+            <div class="card-panel red lighten-2 hoverable">
+              <h2>Recent Searches</h2>
+              <div class="collection">
+              
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col s12 m4">
-          <div class="card-panel red lighten-2 hoverable">
-            <div id="popular-drinks">
-              <ul class="collection with-header">
-                <li class="collection-header">
-                  <h4>Popular Cocktails</h4>
-                </li>
-                <li class="collection-item avatar"><img src="./assets/images/mojito.jpeg" alt="" class="circle">
-                  <span class="title">Mojito</span>
-                </li>
-                <li class="collection-item avatar"><img src="./assets/images/oldfashioned1.webp" alt="" class="circle">
-                  <span class="titles">Old Fashioned</span>
-                </li>
-                <li class="collection-item avatar"><img src="./assets/images/Long-Island-Iced-Tea-IG.jpeg" alt=""
-                    class="circle">
-                  <span class="titles">Long Island Iced Tea</span>
-                </li>
-                <li class="collection-item avatar"><img src="./assets/images/image.jpeg" alt="" class="circle">
-                  <span class="titles">Mai Tai</span>
-                </li>
-              </ul>
+          <div class="col s12 m4">
+            <div class="card-panel red lighten-2 hoverable">
+              <div id="popular-drinks">
+                <ul class="collection with-header">
+                  <li class="collection-header">
+                    <h4>Popular Cocktails</h4>
+                  </li>
+                  <li class="collection-item avatar"><img src="./assets/images/mojito.jpeg" alt="" class="circle">
+                    <span class="title">Mojito</span>
+                  </li>
+                  <li class="collection-item avatar"><img src="./assets/images/oldfashioned1.webp" alt="" class="circle">
+                    <span class="titles">Old Fashioned</span>
+                  </li>
+                  <li class="collection-item avatar"><img src="./assets/images/Long-Island-Iced-Tea-IG.jpeg" alt=""
+                      class="circle">
+                    <span class="titles">Long Island Iced Tea</span>
+                  </li>
+                  <li class="collection-item avatar"><img src="./assets/images/image.jpeg" alt="" class="circle">
+                    <span class="titles">Mai Tai</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col s12 m4" id="spotify-embed">
-          <iframe style="border-radius:12px"
-            src="https://open.spotify.com/embed/playlist/37i9dQZEVXbNG2KDcFcKOF?utm_source=generator" width="100%"
-            height="300" frameBorder="0" allowfullscreen=""
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
-          </iframe>
+          <div class="col s12 m4" id="spotify-embed">
+            <iframe style="border-radius:12px"
+              src="https://open.spotify.com/embed/playlist/37i9dQZEVXbNG2KDcFcKOF?utm_source=generator" width="100%"
+              height="300" frameBorder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+            </iframe>
+            </div>
           </div>
         </div>
       </div>
@@ -106,9 +109,9 @@
     <footer class="page-footer">
       <div class="container">
         <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Thank you for using Rhythm & Booze</h5>
-            <p class="grey-text text-lighten-4">Please enjoy responsibly.</p>
+          <div class="col l12 s12">
+            <h5 class="white-text" id="footerText">Thank you for using Rhythm & Booze</h5>
+            <p class="grey-text text-lighten-4" id="footerText">Please enjoy responsibly.</p>
           </div>
         </div>
       </div>
