@@ -1,5 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
+
     const token = 'BQAhhjPghylfJ1j48owb6WXI4BDjKrBO0vUj3DT0nDlhtQuxke7lniYk2l_-gwUxjDDMrb7LZ77n0bcB3JdJbRPJWrwi3UMlDm-gEFYsx0nt8_mAXYxtxJG_OoXAmOxyRq48pvhBsr2xa2GTThnAwZl1q9BpcniRBxJh8A_NT5MSob9KCqmQGZqO_KD3CvfTNJyr2_uqM7AHiX0OQLBY2vo';
+
+    
 
     fetch('https://api.spotify.com/v1/browse/categories', {
         method: 'GET',
@@ -39,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
     resultBtn.addEventListener("click", function (event) {
         console.log(event.target);
         event.preventDefault();
-
+        mainContainer.style.display="block"
         var musicCategoryId = document.querySelector('#music-input').value;
         console.log(musicCategoryId);
 
@@ -137,8 +140,11 @@ document.addEventListener('DOMContentLoaded', function () {
     function displayIngredients(drink) {
         for (var i = 0; i < drink.ingredients.length; i++) {
             var liEl = document.createElement("li");
+            var nameEl = document.getElementById("drink-name");
             liEl.textContent = drink.ingredients[i];
+            nameEl.textContent = drink.name;
             document.getElementById("ingredients-list").appendChild(liEl);
+
         }
     };
 

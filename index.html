@@ -50,7 +50,9 @@
             </div>
             <div class="input-field" id="music">
               <select id="music-input">
+                <option value="country">country</option>
               </select>
+
               <label class="active" for="music-input">
                 Genre of Music
               </label>
@@ -60,74 +62,62 @@
             </button>
           </div>
         </div>
-
-        <div class="col s12 m4" id="recents">
-          <div class="card-panel red lighten-2 hoverable">
-            <h2>Recent Searches</h2>
-            <div class="collection">
-            
+        <div class="mainContainer">
+          <div class="col s12 m4" id="recents">
+            <div class="card-panel red lighten-2 hoverable">
+              <h2>Recent Searches</h2>
+              <div class="collection">
+              
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col s12 m4">
-          <div class="card-panel red lighten-2 hoverable">
-            <div id="popular-drinks">
-              <ul class="collection with-header">
-                <li class="collection-header">
-                  <h4>Popular Cocktails</h4>
-                </li>
-                <li class="collection-item avatar"><img src="./assets/images/mojito.jpeg" alt="" class="circle">
-                  <span class="title">Mojito</span>
-                </li>
-                <li class="collection-item avatar"><img src="./assets/images/oldfashioned1.webp" alt="" class="circle">
-                  <span class="titles">Old Fashioned</span>
-                </li>
-                <li class="collection-item avatar"><img src="./assets/images/Long-Island-Iced-Tea-IG.jpeg" alt=""
-                    class="circle">
-                  <span class="titles">Long Island Iced Tea</span>
-                </li>
-                <li class="collection-item avatar"><img src="./assets/images/image.jpeg" alt="" class="circle">
-                  <span class="titles">Mai Tai</span>
-                </li>
-              </ul>
+          <div class="col s12 m4">
+            <div class="card-panel #42a5f5 blue lighten-1 hoverable">
+              <div id="popular-drinks">
+                <ul class="collection with-header">
+                  <li class="collection-header">
+                    <h4>Popular Cocktails</h4>
+                  </li>
+                  <li class="collection-item avatar"><img src="./assets/images/mojito.jpeg" alt="" class="circle">
+                    <a href="https://www.loveandlemons.com/mojito-recipe/" target="_blank">Mojito</a>
+                  </li>
+                  <li class="collection-item avatar"><img src="./assets/images/oldfashioned1.webp" alt="" class="circle">
+                    <a href="https://www.liquor.com/recipes/bourbon-old-fashioned/" target="_blank">Old Fashioned</a>
+                  </li>
+                  <li class="collection-item avatar"><img src="./assets/images/Long-Island-Iced-Tea-IG.jpeg" alt=""
+                      class="circle">
+                      <a href="https://www.allrecipes.com/recipe/228491/the-real-long-island-iced-tea/" target="_blank">Long Island Iced Tea</a>
+                  </li>
+                  <li class="collection-item avatar"><img src="./assets/images/image.jpeg" alt="" class="circle">
+                    <a href="https://www.epicurious.com/recipes/food/views/mai-tai-230577" target="_blank">Mai Tai</a>
+                  </li>
+                  <li class="collection-item avatar"><img src="./assets/images/whiteRussian.png" alt="" class="circle">
+                    <a href="https://www.acouplecooks.com/white-russian/" target="_blank">White Russian</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col s12 m4" id="spotify-embed">
-          <iframe style="border-radius:12px"
-            src="https://open.spotify.com/embed/playlist/37i9dQZEVXbNG2KDcFcKOF?utm_source=generator" width="100%"
-            height="300" frameBorder="0" allowfullscreen=""
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
-          </iframe>
+          <div class="col s12 m4" id="spotify-embed">
+            <iframe style="border-radius:12px"
+              src="https://open.spotify.com/embed/playlist/37i9dQZEVXbNG2KDcFcKOF?utm_source=generator" width="100%"
+              height="300" frameBorder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+            </iframe>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <footer class="page-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Thank you for using Rhythm & Booze</h5>
-            <p class="grey-text text-lighten-4">Please enjoy responsibly.</p>
-          </div>
-        </div>
-      </div>
-      <div class="footer-copyright">
-        <div class="container">
-          © 2022
-        </div>
-    </footer>
-  </div>
-
   <div id="results-page">
-    <header id="header">
+    <!-- <header id="header">
       <nav>
         <div class="nav-wrapper">
           <a href="#" class="brand-logo center">Rhythm & Booze</a>
         </div>
       </nav>
     </header>
-
+<!-- <input type="text" id="music-input"> -->
     <div class="col s12 m7">
       <div class="card horizontal red lighten-3">
         <div class="card-stacked" id="results-header">
@@ -193,7 +183,9 @@
             <h6>
               Ingredients
             </h6>
-
+            <h6 id="drink-name">
+              
+            </h6>
             <ul id="ingredients-list">
 
             </ul>
@@ -211,6 +203,21 @@
       </div>
     </div>
   </div>
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l12 s12">
+          <h5 class="white-text" id="footerText">Thank you for using Rhythm & Booze</h5>
+          <p class="grey-text text-lighten-4" id="footerText">Please enjoy responsibly.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2022
+      </div>
+  </footer>
+</div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="./assets/js/script.js"></script>
 </body>
