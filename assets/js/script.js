@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var mainContainer=document.querySelector(".mainContainer")
-    mainContainer.style.display="none"
-    const token = 'BQBVQ87BaQb6bXm68UO4D9xlErUmpWmWcqahSYXSr-lM5LlqT-GSBiNS_Un01WLy0MaXR37mZrTgogi3jV8mdWuVdrnH8TJPVVsO3R7BP6QuuiP8gWq1MFd0-y3HImvQSypPlkzwEGmeHC0k6yf_86N7PdXuCiBZDP_p1GlJouq1ZQ6zYu74_oWk81cnWZOpjttD__NR6tkws32q1YfP2os';
+
+    const token = 'BQAhhjPghylfJ1j48owb6WXI4BDjKrBO0vUj3DT0nDlhtQuxke7lniYk2l_-gwUxjDDMrb7LZ77n0bcB3JdJbRPJWrwi3UMlDm-gEFYsx0nt8_mAXYxtxJG_OoXAmOxyRq48pvhBsr2xa2GTThnAwZl1q9BpcniRBxJh8A_NT5MSob9KCqmQGZqO_KD3CvfTNJyr2_uqM7AHiX0OQLBY2vo';
+
+    
 
     fetch('https://api.spotify.com/v1/browse/categories', {
         method: 'GET',
