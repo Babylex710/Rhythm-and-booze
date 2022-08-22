@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
 
     const token = 'BQAhhjPghylfJ1j48owb6WXI4BDjKrBO0vUj3DT0nDlhtQuxke7lniYk2l_-gwUxjDDMrb7LZ77n0bcB3JdJbRPJWrwi3UMlDm-gEFYsx0nt8_mAXYxtxJG_OoXAmOxyRq48pvhBsr2xa2GTThnAwZl1q9BpcniRBxJh8A_NT5MSob9KCqmQGZqO_KD3CvfTNJyr2_uqM7AHiX0OQLBY2vo';
-
+    // var results = document.getElementById("results-page").style.display = "none";
+    
     
 
     fetch('https://api.spotify.com/v1/browse/categories', {
@@ -42,7 +43,8 @@ document.addEventListener('DOMContentLoaded', function () {
     resultBtn.addEventListener("click", function (event) {
         console.log(event.target);
         event.preventDefault();
-        mainContainer.style.display="block"
+        var mainContainer = document.querySelector(".mainContainer").style.display = "none";
+        results.style.display ="block"; 
         var musicCategoryId = document.querySelector('#music-input').value;
         console.log(musicCategoryId);
 
@@ -81,10 +83,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 printRecentSearch();
             })
             .catch(err => console.error(err));
-
-
-
-        
 
 
     })
