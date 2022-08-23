@@ -5,12 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- linking CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" href="./assets/css/style.css">
-  <title>Document</title>
+  <title>Rhythm & Booze</title>
 </head>
 
 <body>
+  <!-- header of page -->
   <div id="start-page">
     <header id="header">
       <nav>
@@ -33,6 +35,7 @@
       </div>
     </div>
 
+    <!-- User is able to input base liquor and choose genre of music -->
     <div class="container" id="sidebar">
       <div class="row">
         <div class="col s12 m12" id="search card">
@@ -54,7 +57,7 @@
               </select>
 
               <label class="active" for="music-input">
-                
+
               </label>
             </div>
             <button class="btn" id="result">
@@ -62,15 +65,18 @@
             </button>
           </div>
         </div>
+
+        <!-- Saves recent searches -->
         <div class="mainContainer">
           <div class="col s12 m4" id="recents">
             <div class="card-panel purple darken-2 hoverable">
               <h4>Recent Searches</h4>
               <div class="collection">
-              
               </div>
             </div>
           </div>
+
+          <!-- List of popular drinks with links to recipes -->
           <div class="col s12 m4">
             <div class="card-panel #42a5f5 purple darken-2 hoverable">
               <div id="popular-drinks">
@@ -81,12 +87,14 @@
                   <li class="collection-item avatar"><img src="./assets/images/mojito.jpeg" alt="" class="circle">
                     <a href="https://www.loveandlemons.com/mojito-recipe/" target="_blank">Mojito</a>
                   </li>
-                  <li class="collection-item avatar"><img src="./assets/images/oldfashioned1.webp" alt="" class="circle">
+                  <li class="collection-item avatar"><img src="./assets/images/oldfashioned1.webp" alt=""
+                      class="circle">
                     <a href="https://www.liquor.com/recipes/bourbon-old-fashioned/" target="_blank">Old Fashioned</a>
                   </li>
                   <li class="collection-item avatar"><img src="./assets/images/Long-Island-Iced-Tea-IG.jpeg" alt=""
                       class="circle">
-                      <a href="https://www.allrecipes.com/recipe/228491/the-real-long-island-iced-tea/" target="_blank">Long Island Iced Tea</a>
+                    <a href="https://www.allrecipes.com/recipe/228491/the-real-long-island-iced-tea/"
+                      target="_blank">Long Island Iced Tea</a>
                   </li>
                   <li class="collection-item avatar"><img src="./assets/images/image.jpeg" alt="" class="circle">
                     <a href="https://www.epicurious.com/recipes/food/views/mai-tai-230577" target="_blank">Mai Tai</a>
@@ -98,41 +106,44 @@
               </div>
             </div>
           </div>
+
+          <!-- Spotify -->
           <div class="col s12 m4" id="spotify-embed">
             <iframe style="border-radius:12px"
               src="https://open.spotify.com/embed/playlist/37i9dQZEVXbNG2KDcFcKOF?utm_source=generator" width="100%"
               height="600" frameBorder="0" allowfullscreen=""
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
             </iframe>
-            </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
+  <!-- shows results and drink recipe -->
   <div id="results-page" class="container">
-      <div class="row">
-        <div class="col s12 m4" id="ingredients-card">
-          <div class="card-panel cyan darken-2 hoverable">
-            <h6 id="drink-name">
-              
-            </h6>
-            <ul id="ingredients-list">
+    <div class="row">
+      <div class="col s12 m4" id="ingredients-card">
+        <div class="card-panel cyan darken-2 hoverable">
+          <h6 id="drink-name">
 
-            </ul>
-          </div>
+          </h6>
+          <ul id="ingredients-list">
 
+          </ul>
         </div>
-        <div class="col s12 m8" id="result-playlist">
-          <div class="card-panel cyan darken-2 hoverable">
-            <iframe id="spot" style="border-radius:12px"
-              src="" width="100%"
-              height="380" frameBorder="0" allowfullscreen=""
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-          </div>
+
+      </div>
+      <!-- displays spotify playlist -->
+      <div class="col s12 m8" id="result-playlist">
+        <div class="card-panel cyan darken-2 hoverable">
+          <iframe id="spot" style="border-radius:12px" src="" width="100%" height="380" frameBorder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
         </div>
       </div>
     </div>
-    
+  </div>
+
   </div>
   <footer id="foot" class="page-footer">
     <div class="container">
@@ -148,7 +159,8 @@
         © 2022
       </div>
   </footer>
-</div>
+  </div>
+  <!-- linking js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="./assets/js/script.js"></script>
 </body>
