@@ -1,11 +1,19 @@
 body {
-    background-color: #ee9c81;
+    background-image: url('../images/background4.jpeg')
 }
 
-#header-bg {
+#head {
+    background-color: purple;   
+}
+
+/* #header-bg {
     background-image: url(/assets/images/bar.webp);
     height: 250px;
     width: 100%;
+} */
+
+#foot {
+    background-image: linear-gradient(deeppink, black);
 }
 
 .header {
@@ -35,6 +43,7 @@ h6 {
 #results-header {
     text-align: center;
     color: whitesmoke;
+    background-image: linear-gradient(purple, #00CCCC);
 }
 
 .footer-copyright {
@@ -78,4 +87,8 @@ h4 {
 
 ul {
     color: whitesmoke;
+}
+
+#recents {
+    color: aliceblue;
 }
