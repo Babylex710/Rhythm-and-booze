@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    const token = 'BQAhhjPghylfJ1j48owb6WXI4BDjKrBO0vUj3DT0nDlhtQuxke7lniYk2l_-gwUxjDDMrb7LZ77n0bcB3JdJbRPJWrwi3UMlDm-gEFYsx0nt8_mAXYxtxJG_OoXAmOxyRq48pvhBsr2xa2GTThnAwZl1q9BpcniRBxJh8A_NT5MSob9KCqmQGZqO_KD3CvfTNJyr2_uqM7AHiX0OQLBY2vo';
-    // var results = document.getElementById("results-page").style.display = "none";
+    const token = 'BQCdJqY02TOlVNvMpoWHvneLag5FlY6gdAjnCRNJZQBm4HoRCHOlcBNsB_4cBpKBBmGB9vomO7Q4lSPlxyFqd-IFnfMGbix4juqteUa7TeFW8CI1Aj4ubBfxYopn5tsKPPWUf1vcpDxR8beP8OPkpN0lIYA1f0Rsh0ioykGi1CfVnAa1TqJ92uSAWcTxyiQXKo3QE8YyOtrrNCdQIhNEoVY';
+    var results = document.getElementById("results-page")
+    //.style.display = "none";
     
     
 

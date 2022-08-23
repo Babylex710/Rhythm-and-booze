@@ -1,3 +1,21 @@
+body {
+    background-color: #ee9c81;
+}
+
+#header-bg {
+    background-image: url(/assets/images/bar.webp);
+    height: 250px;
+    width: 100%;
+}
+
+.header {
+	color: white;
+	font-size: 36px;
+	text-align: center;
+    text-shadow: 2px 2px black;
+    position: relative;
+}
+
 #starter {
     margin-top: 28px;
 }
@@ -52,4 +70,12 @@ h5 {
 
 h4 {
     text-align: center;
+}
+
+#ingredients-card {
+    min-height: none;
+}
+
+ul {
+    color: whitesmoke;
 }
