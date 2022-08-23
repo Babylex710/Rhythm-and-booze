@@ -79,6 +79,7 @@ h5 {
 
 h4 {
     text-align: center;
+    color: black;
 }
 
 #ingredients-card {
@@ -92,3 +93,4 @@ ul {
 #recents {
     color: aliceblue;
 }
+
