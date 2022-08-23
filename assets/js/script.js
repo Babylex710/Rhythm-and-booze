@@ -1,3 +1,4 @@
+// API for Spotify and the Cocktail DB
 document.addEventListener('DOMContentLoaded', function () {
 
     const token = 'BQDpvSWT34QkVlMldlp_b6Bsg1bBu4QV_ReBPMPwD536yHqoM_MvbZgklrVv6rZ866VQqNM6No_vFbOQEJVZAqvtij8RXZXThcur5hLLhPaRRZIpBsUU6mA2GbW9CD0ssKHg596VvKQChtErXzCj1rskZwzcXb4VOcUnuBpZrgG81KzIxJZedYqfESms71apL3JiVfXXRvWFzdDah7yqasY';
@@ -88,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     })
  
-
+// Function to save recent searches
     function recentSearchs(name) {
         var baseIngredient = base.value;
         var musicSelection = name;
@@ -121,9 +122,10 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
     }
-
+// Displays recent searches
     printRecentSearch();
 
+    // Funtion to generate ingredients for random cocktail
     function getRandom(arr) {
         var randomIndex = Math.floor(Math.random() * arr.length);
         var randomBase = arr[randomIndex];

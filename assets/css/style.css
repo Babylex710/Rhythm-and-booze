@@ -1,21 +1,17 @@
+/* Added background image */
 body {
     background-image: url('../images/background4.jpeg')
 }
-
+/* added background color to header */
 #head {
     background-color: purple;   
 }
 
-/* #header-bg {
-    background-image: url(/assets/images/bar.webp);
-    height: 250px;
-    width: 100%;
-} */
-
+/* added gradient background color to footer */
 #foot {
     background-image: linear-gradient(deeppink, black);
 }
-
+/* aligned text for header */
 .header {
 	color: white;
 	font-size: 36px;
@@ -39,7 +35,7 @@ h6 {
     padding-top: 5%;
     text-decoration-line: underline;
 }
-
+/* added gradient color */
 #results-header {
     text-align: center;
     color: whitesmoke;
@@ -63,7 +59,7 @@ h5 {
 
     /* display: none;  */
  }
-
+/* fixed position of spotify box */
 #spot {
     padding-right: 12px;
 }
@@ -81,7 +77,7 @@ h4 {
     text-align: center;
     color: black;
 }
-
+/* no minimum height for ingredients card */
 #ingredients-card {
     min-height: none;
 }
