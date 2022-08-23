@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    const token = 'BQCdJqY02TOlVNvMpoWHvneLag5FlY6gdAjnCRNJZQBm4HoRCHOlcBNsB_4cBpKBBmGB9vomO7Q4lSPlxyFqd-IFnfMGbix4juqteUa7TeFW8CI1Aj4ubBfxYopn5tsKPPWUf1vcpDxR8beP8OPkpN0lIYA1f0Rsh0ioykGi1CfVnAa1TqJ92uSAWcTxyiQXKo3QE8YyOtrrNCdQIhNEoVY';
+    const token = 'BQDpvSWT34QkVlMldlp_b6Bsg1bBu4QV_ReBPMPwD536yHqoM_MvbZgklrVv6rZ866VQqNM6No_vFbOQEJVZAqvtij8RXZXThcur5hLLhPaRRZIpBsUU6mA2GbW9CD0ssKHg596VvKQChtErXzCj1rskZwzcXb4VOcUnuBpZrgG81KzIxJZedYqfESms71apL3JiVfXXRvWFzdDah7yqasY';
     var results = document.getElementById("results-page")
-    //.style.display = "none";
+    results.style.display = "none";
     
     
 
@@ -105,13 +105,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function printRecentSearch() {
         // create logic to clear all elements in current .collection
+        var collectionEl = document.querySelector(".collection");
+        collectionEl.innerHTML = ""
         var userRecents = JSON.parse(localStorage.getItem("user-recent")) || [];
         var reverseUserRecents = userRecents.reverse();
         if (reverseUserRecents.length === 0) {
             return
         } else {
             for (var i = 0; i < 4; i++) {
-                var collectionEl = document.querySelector(".collection")
+                
                 var aEl = document.createElement("a");
                 aEl.className = "collection-item";
                 aEl.textContent = reverseUserRecents[i].alcohol + " with " + reverseUserRecents[i].genre;
@@ -137,6 +139,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     function displayIngredients(drink) {
+        document.querySelector('#ingredients-list').innerHTML = '';
         for (var i = 0; i < drink.ingredients.length; i++) {
             var liEl = document.createElement("li");
             var nameEl = document.getElementById("drink-name");
