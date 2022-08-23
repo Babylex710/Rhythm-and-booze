@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    const token = 'BQDpvSWT34QkVlMldlp_b6Bsg1bBu4QV_ReBPMPwD536yHqoM_MvbZgklrVv6rZ866VQqNM6No_vFbOQEJVZAqvtij8RXZXThcur5hLLhPaRRZIpBsUU6mA2GbW9CD0ssKHg596VvKQChtErXzCj1rskZwzcXb4VOcUnuBpZrgG81KzIxJZedYqfESms71apL3JiVfXXRvWFzdDah7yqasY';
+    const token = 'BQAP0n1w1aPuWOMZ6e-y5LEsgoxHvMHCYauekybMETxusmthLKWjQqraEipPkRdEqM4wo5lv0g-POsSTqCv8K7clxoZXMKKGwxWRpH_XvVWTanjT-BZfx0VPXVferltgkbow4urnYk7VURUu9HFg8EfDhphHzbszHSrqXgyNSQAoJp3o0zRT5rwSU3zCkgK0C_NKFprChYR7oWh-xQs3who';
     var results = document.getElementById("results-page")
     results.style.display = "none";
     
