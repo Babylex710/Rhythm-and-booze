@@ -13,11 +13,9 @@
 <body>
   <div id="start-page">
     <header id="header">
-      <nav>
-        <div class="nav-wrapper">
-          <a href="#" class="brand-logo center">Rhythm & Booze</a>
-        </div>
-      </nav>
+      <div class="image" id="header-bg" style="background-position-y: 50%; background-position: 50%;">
+        <p class="header" id="header-text">Rhythm & Booze</p>
+      </div>
     </header>
 
     <div class="col s12 m7">
@@ -65,7 +63,7 @@
         <div class="mainContainer">
           <div class="col s12 m4" id="recents">
             <div class="card-panel red lighten-2 hoverable">
-              <h2>Recent Searches</h2>
+              <h4>Recent Searches</h4>
               <div class="collection">
               
               </div>
@@ -101,7 +99,7 @@
           <div class="col s12 m4" id="spotify-embed">
             <iframe style="border-radius:12px"
               src="https://open.spotify.com/embed/playlist/37i9dQZEVXbNG2KDcFcKOF?utm_source=generator" width="100%"
-              height="300" frameBorder="0" allowfullscreen=""
+              height="600" frameBorder="0" allowfullscreen=""
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
             </iframe>
             </div>
@@ -112,10 +110,7 @@
   <div id="results-page" class="container">
       <div class="row">
         <div class="col s12 m4" id="ingredients-card">
-          <div class="card small panel red lighten-3 hoverable">
-            <h6>
-              Ingredients
-            </h6>
+          <div class="card-panel red lighten-3 hoverable">
             <h6 id="drink-name">
               
             </h6>
@@ -135,20 +130,6 @@
         </div>
       </div>
     </div>
-
-    <div class="col s12 m7">
-      <div class="card horizontal red lighten-3">
-        <div class="card-stacked" id="results-header">
-          <div class="card-content">
-            <h5>Here's Your Match! Get to Mixing</h5>
-          </div>
-          <div class="card-content">
-            <hr>Thanks For Using Rhythm&Booze!!!</hr>
-          </div>
-        </div>
-      </div>
-    </div>
-
     
   </div>
   <footer class="page-footer">
