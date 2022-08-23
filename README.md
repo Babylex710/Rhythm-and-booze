@@ -32,3 +32,5 @@ The biggest challenge was using and remembering all of the Javascript that we ha
 
 [https://Babylex710.github.io/Rhythm-and-booze/] (https://Babylex710.github.io/Rhythm-and-booze/)
 
+## Link to Github Repo:
+ [https://github.com/Babylex710/Rhythm-and-booze] (https://github.com/Babylex710/Rhythm-and-booze)
