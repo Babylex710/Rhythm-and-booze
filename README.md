@@ -19,7 +19,7 @@ Website Address:
 Why We Made This Project:
 
 
-Biggest Challenges:
+Biggest Challenges: Getting the proper API to funtion to our project and running a few tests to ensure there were no errors loading to users.
 
 Code Breakdown:
 
